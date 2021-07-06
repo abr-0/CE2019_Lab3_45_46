@@ -1,1 +1,4 @@
-# CE2019_Lab3_45_46
+## Lab 3
+### Implementaion of BST
+#### Linked BST -> Anjali_45
+#### Array BST -> Ashutosh_46
