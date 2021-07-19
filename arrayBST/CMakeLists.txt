@@ -4,4 +4,5 @@ project(arrayBST)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(arrayBST main.cpp)
+include_directories(include)
+add_executable(arrayBST src/main.cpp src/arrayBSTdef.cpp)
