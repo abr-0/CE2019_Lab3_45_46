@@ -21,6 +21,7 @@ public:
 
     bool isEmpty() const;
     void addBST(int key, char value);
+    void arrangeBST(int tempRoot);
     void removeBST(int key);
     bool searchBST(int key) const;
     void display() const;
