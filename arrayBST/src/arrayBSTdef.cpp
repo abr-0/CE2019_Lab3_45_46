@@ -103,7 +103,6 @@ void ArrayBST::removeBST(int key){
                 arrangeBST(smallRight*2+1);
             }
         }
-        
     }
 }
 

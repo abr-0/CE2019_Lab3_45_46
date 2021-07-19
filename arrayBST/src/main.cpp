@@ -15,8 +15,7 @@ int main(){
     a1.addBST(9, 'E');
     a1.addBST(4, 'F');
 
-    // a1.removeBST(2);
-    // a1.removeBST(8);
+    a1.removeBST(2);
     a1.removeBST(3);
     
     cout << "searchBST: " << a1.searchBST(8) << endl;
