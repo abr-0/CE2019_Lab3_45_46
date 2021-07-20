@@ -6,7 +6,7 @@ linkedBST::linkedBST() : root(nullptr) {}
 //     delete root;
 // }
 
-bool linkedBST::isEmpty()
+bool linkedBST::isEmpty() const
 {
     if(root == nullptr){
         return true;
@@ -16,7 +16,7 @@ bool linkedBST::isEmpty()
     }
 }
 
-void linkedBST::addBST(int key, int data)
+void linkedBST::addBST(int key, char data)
 {
     // Node *newNode= new Node;
     // newNode->key = key;
@@ -173,7 +173,7 @@ void linkedBST::min(int &output) {
     }
 }
 
-bool linkedBST::exists(int selectKey) {
+bool linkedBST::searchBST(int key) const{
 
     if (isEmpty()) 
     {
@@ -185,11 +185,11 @@ bool linkedBST::exists(int selectKey) {
         
         while (temp != nullptr) 
         {
-            if (temp->key == selectKey) 
+            if (temp->key == key) 
             {
                 break;
 
-            } else if (temp->key < selectKey) 
+            } else if (temp->key < key) 
             {
                 temp = temp->right;
             } else 

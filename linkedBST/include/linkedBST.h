@@ -1,33 +1,33 @@
 #ifndef BST_h
 #define BST_h
 
-#include "abstractBST.h"
+#include "../../abstractBST.hpp"
 #include<iostream>
 using namespace std;
 
 class Node {
     public:
     int key;
-    int data;
+    char data;
     Node *left;
     Node *right;
 
      Node():left(nullptr){}
      //Node():right(nullptr){}
-    Node(int key,int data, Node *left, Node *right):key(key),data(data),left(left),right(right){}
+    Node(int key,char data, Node *left, Node *right):key(key),data(data),left(left),right(right){}
 };
 
-class linkedBST : public abstractBST {
+class linkedBST : public AbstractBST {
     public:
     linkedBST();
 
-    bool isEmpty();
-    void addBST(int key, int data);
+    bool isEmpty() const;
+    void addBST(int key, char data);
     
     void max(int &output);
     void min(int &output);
     
-    bool exists(int targetKey);
+    bool searchBST(int key) const;
     void removeBST(int key);
 
     void inorder();

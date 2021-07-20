@@ -6,16 +6,16 @@ int main()
 {
     linkedBST test;
 
-    test.addBST(30,30);
-    test.addBST(40,40);
-    test.addBST(20,20);
-    test.addBST(5,5);
-    test.addBST(88,88);
-    test.addBST(59,59);
-    test.addBST(23,23);
-    test.addBST(12,12);
+    test.addBST(30,'A');
+    test.addBST(40,'B');
+    test.addBST(20,'C');
+    test.addBST(5,'D');
+    test.addBST(88,'E');
+    test.addBST(59,'F');
+    test.addBST(23,'G');
+    test.addBST(12,'H');
 
-    test.addBST(10,10);
+    test.addBST(10,'I');
     std::cout<<"BST inorder traversal"<<std::endl;
     test.inorder();
     test.removeBST(40);
@@ -24,13 +24,13 @@ int main()
     std::cout<<"After removal:"<<std::endl;
     test.inorder();
 
-    int min_value;
-    test.min(min_value);
-    std::cout<<"The minium value in BST is:"<<min_value<<std::endl;
+    int min_key;
+    test.min(min_key);
+    std::cout<<"The minium key in BST is:"<<min_key<<std::endl;
 
-    int max_value;
-    test.max(max_value);
-    std::cout<<"The maximum value in BST is:"<<max_value<<std::endl;
+    int max_key;
+    test.max(max_key);
+    std::cout<<"The maximum key in BST is:"<<max_key<<std::endl;
     
-    std::cout<<"Checking Existence of key:"<<test.exists(5)<<std::endl;
+    std::cout<<"Checking Existence of key:"<<test.searchBST(5)<<std::endl;
 }
